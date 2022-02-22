@@ -1,9 +1,11 @@
-
+import Competition from "./components/Competition/Competition";
+import CompetitionPage from "./pages/Competition/CompetitionPage";
 
 function App() {
   return (
     <div className="App">
-      Fast & Furious v4
+      <CompetitionPage/>
+      {/* <Competition/> */}
     </div>
   );
 }
