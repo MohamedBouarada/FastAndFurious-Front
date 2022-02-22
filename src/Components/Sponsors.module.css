@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-family: "Lucida Handwriting", "Brush Script MT", Cursive;
+    margin-top: -100px;
+
+}
+
+.ugrey5{
+    color: #111111;
+    background-color: #f2f2f2;
+    padding:150px 0;
+    width: 100%;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+article.row {
+  width:100%;
+  max-width:800px;
+  margin:0 auto;
+  padding:45px 0;
+}
+
+article.row div {
+  width:49.4%;
+  display:inline-block;
+  position:relative;
+}
+
+
+
+#ideaOne img, #ideaTwo img, #idea-three img {
+  position:absolute;
+  bottom:10px;
+  left:50px;}
+
+@media(max-width:750px){
+
+  article.row div {min-width:300px;width:90%;margin:0 5%;text-align:center;display:block;}
+  #some-other-box h3 {text-align:center;}
+	#ideaOne img, #ideaTwo img, #idea-three img {position:relative;margin:auto;left:inherit;bottom:inherit;}
+  #ideaTwo {display:-webkit-box;display:-moz-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical;}
+	#ideaTwo div:first-of-type {-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;box-ordinal-group:2;}
+}
