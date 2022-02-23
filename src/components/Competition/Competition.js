@@ -1,18 +1,58 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import SendIcon from "@mui/icons-material/Send";
+import Stack from "@mui/material/Stack";
 import classes from "./Competition.module.css";
 
 export default function Competition() {
   return (
-    <div className={`${classes.shadow} rounded ${classes.feature_item} p-4 mb-4`} data-aos="fade-up">
-      {/* <div className="my-4">
-                        <i className="lnr lnr-frame-contract fs-40" />
-                      </div>
-                      <h4>Pixel Perfect</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod.
-                      </p> */}
-    </div>
+    <Card sx={{ maxWidth: 345 }} className={classes.cardStyle}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="https://scx2.b-cdn.net/gfx/news/2019/3-robot.jpg"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Robotic Competition
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          robotics, design, construction, and use of machines (robots) to
+          perform tasks done traditionally by human beings. ... Many aspects of
+          robotics involve artificial intelligence
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={1}
+        >
+          <Button
+            variant="outlined"
+            startIcon={<ArrowDownwardIcon />}
+            color="success"
+            className={classes.buttonStyle1}
+          >
+            Down
+          </Button>
+          <Button
+            variant="outlined"
+            endIcon={<SendIcon />}
+            className={classes.buttonStyle2}
+          >
+            Participate
+          </Button>
+        </Stack>
+      </CardActions>
+    </Card>
   );
 }

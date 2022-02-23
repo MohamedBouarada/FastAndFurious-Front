@@ -146,7 +146,6 @@ export default function CompetitionPage() {
                   {/* Features Item */}
                   <div className="col-md-4 col-sm-12 text-center mt-4">
                     <Competition />
-                    <Competition />
                   </div>
                   {/* End of Feature Item */}
                   {/* Features Item */}
@@ -157,7 +156,6 @@ export default function CompetitionPage() {
                   {/* End of Feature Item */}
                   {/* Features Item */}
                   <div className="col-md-4 col-sm-12 text-center mt-4">
-                    <Competition />
                     <Competition />
                   </div>
                   {/* End of Feature Item */}
