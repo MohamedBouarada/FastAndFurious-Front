@@ -11,7 +11,8 @@ export default function CompetitionPage() {
             className="navbar-brand d-flex align-items-center text-white"
             href="/"
           >
-            <h3 className="font-weight-bolder mb-0">fast&furious</h3>
+            {/* <h3 className="font-weight-bolder mb-0">fast&furious</h3> */}
+            <img src={require('./img/logo_f_f_blanc.png')} alt="logo" className="logoStyle"/>
           </a>
           <button
             className="navbar-toggler"
@@ -27,8 +28,8 @@ export default function CompetitionPage() {
           <div className="collapse navbar-collapse" id="navbar-nav-header">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Home
+                <a className="nav-link" href="#">
+                  Form
                 </a>
               </li>
               {/* <li className="nav-item">
@@ -37,7 +38,7 @@ export default function CompetitionPage() {
                 </a>
               </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="blog.html">
+                <a className="nav-link" href="#competitions">
                   Blog
                 </a>
               </li>
@@ -130,7 +131,7 @@ export default function CompetitionPage() {
         <div className="container">
           <div className="section-content">
             {/* Section Title */}
-            <div className="title-wrap mb-5" data-aos="fade-up">
+            <div className="title-wrap mb-5" data-aos="fade-up" id="competitions">
               <h2 className="section-title">Fast And furious Competition</h2>
               <p className="section-sub-title">
                 Vous pouvez encore consulter les cahiers des charges des
