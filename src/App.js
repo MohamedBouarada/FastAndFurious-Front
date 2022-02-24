@@ -1,9 +1,10 @@
-
+import LoginForm from "./components/LoginForm/LoginForm";
+import SignUp from "./components/SignUp/SignUp";
 
 function App() {
   return (
     <div className="App">
-      Fast & Furious
+      <SignUp />
     </div>
   );
 }
