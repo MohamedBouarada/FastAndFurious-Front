@@ -1,11 +1,27 @@
 import ScrollIntoView from "react-scroll-into-view";
+import useWindowDimensions from "../../utilities/ScreenDimensions";
 import styles from "./navBar.module.css";
-
-const NavBar = () => {
+import { FaBars } from "react-icons/fa";
+import { Button } from "react-bootstrap";
+const NavBar = ({handleShow,show}) => {
+  const {  width } = useWindowDimensions();
+  const isHidden=show?"hidden":"visible";
   return (
     <>
       <section>
+        
         <div className={styles.nav}>
+        <div className={styles.logoContainer}>
+          <div className={styles.logo1}>
+
+        <img src="/logos/logoff.png" className={styles.logoFF} />
+          </div>
+          <div className={styles.logo2}>
+
+        <img src="/logos/logoauto.png" className={styles.logoAC} />
+          </div>
+        </div>
+        {width>=700 && (
           <ul>
             <li>
               <ScrollIntoView selector="#slide1">
@@ -43,7 +59,14 @@ const NavBar = () => {
               </ScrollIntoView>
             </li>
           </ul>
+          )}
+          {width<700 && (
+      <Button className={styles.bars} onClick={handleShow} style={{visibility:isHidden}}>
+                <FaBars />
+            </Button>)}
         </div>
+      
+      
       </section>
       {/* */}
     </>

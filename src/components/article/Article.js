@@ -19,7 +19,7 @@ const Article=(props)=>{
     
     const { width } = useWindowDimensions();
     useEffect(()=>{},[width]);
-    if(width<1200){
+    if(width<1400){
         return (
           <div className={styles.ImgContainer}>
             <img src={image} alt={title} className={styles.image} />
@@ -42,7 +42,7 @@ const Article=(props)=>{
           </div>
         );}
     else return (
-      <Parallax className={styles.image} bgImage={image} strength={400}>
+      <Parallax className={styles.image} bgImage={image} strength={600}>
         <div className={styles.logoContainer}>
           <img src={logo} className={styles.logo} />
         </div>
