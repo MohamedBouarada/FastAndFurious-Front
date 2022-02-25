@@ -20,11 +20,10 @@ section{
     font-family: 'Roboto', sans-serif;
   }
   .logoContainer{
-   margin-top: 1%;
     display: flex;
     text-align: center;
     align-items: center;
-    
+    margin-bottom: -1.5%;
     width: 100%;
     height: 60px;
     
@@ -35,7 +34,7 @@ section{
   margin-right: 40%;
 }
 .logoFF{
-    width: 60%;
+    width: 40%;
     height: 100%;
     
     margin-left: 0;
@@ -46,7 +45,7 @@ section{
    width: 100%;
  }
 .logoAC{
-  width: 60%;
+  width: 40%;
   height: 100%;
  
 }
@@ -58,7 +57,7 @@ section{
     transform: scale(3);
     background-color: transparent;
     color: black;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     border: none;
     cursor: pointer;
     }  
@@ -69,6 +68,8 @@ section{
   .nav ul {
     list-style: none;
     text-align: center;
+    margin-bottom: -1%;
+    margin-top: -1%;
   }
    .nav li {
     display: inline-block;
@@ -119,6 +120,18 @@ section{
         font-size: 0.8rem;
         padding: 0;
     }
+    .logoContainer{
+      margin-top: -1%;
+    }
+    .logoAC{
+      width: 50%;
+      margin-right: 5%;
+      
+    }
+    .logoFF{
+      width: 50%;
+      
+    }
 }
 @media (max-width: 700px) {
   a {
@@ -126,14 +139,45 @@ section{
       font-size: 0.6rem;
       padding: 0;
   }
+  a:hover {
+    color: rgb(224, 40, 40);
+  }
+  .logoAC{
+    width: 70%;
+    margin-right: 5%;
+    
+  }
+  .logo2{
+    margin-right: 5%;
+    
+  }
+  .logoFF{
+    width: 70%;
+    
+  }
 }
   
-@media (max-width: 400px) {
- .logoFF{
-   width: 100%;
- }
+@media (max-width: 500px) {
+  .nav{
+    padding: 0;
+  }
+  a:hover {
+    color: rgb(224, 40, 40);
+  }
+  .logoContainer{
+    margin-bottom: -1%;
+  }
  .logoAC{
-   width: 100%;
+   width: 70%;
+   margin-right: 5%;
+   
+ }
+ .logo2{
+   margin-right: 5%;
+   
+ }
+ .bars{
+  margin-right: 40%;
  }
  
 }
