@@ -21,7 +21,7 @@ const NavBar = ({handleShow,show}) => {
         <img src="/logos/logoauto.png" className={styles.logoAC} />
           </div>
         </div>
-        {width>=700 && (
+        {width>=500 && (
           <ul>
             <li>
               <ScrollIntoView selector="#slide1">
@@ -60,8 +60,8 @@ const NavBar = ({handleShow,show}) => {
             </li>
           </ul>
           )}
-          {width<700 && (
-      <Button className={styles.bars} onClick={handleShow} style={{visibility:isHidden}}>
+          {width<500 && (
+      <Button className={styles.bars} onClick={handleShow} >
                 <FaBars />
             </Button>)}
         </div>

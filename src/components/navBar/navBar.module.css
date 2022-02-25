@@ -66,11 +66,11 @@ section{
       color: rgb(224, 40, 40);
     }
     
-  ul {
+  .nav ul {
     list-style: none;
     text-align: center;
   }
-    li {
+   .nav li {
     display: inline-block;
   }
    a {
@@ -119,6 +119,13 @@ section{
         font-size: 0.8rem;
         padding: 0;
     }
+}
+@media (max-width: 700px) {
+  a {
+      font-weight: 600;
+      font-size: 0.6rem;
+      padding: 0;
+  }
 }
   
 @media (max-width: 400px) {

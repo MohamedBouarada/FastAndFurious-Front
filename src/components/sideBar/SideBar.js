@@ -1,23 +1,22 @@
 import styles from "./sideBar.module.css"
 import ScrollIntoView from "react-scroll-into-view";
-import {Button, Offcanvas} from "react-bootstrap";
+
 import useWindowDimensions from "../../utilities/ScreenDimensions";
+import { useEffect } from "react";
 
 
-export const Sidebar=({show,handleClose})=>{
+export const Sidebar=({show,handleShow})=>{
     const { width } = useWindowDimensions();
-
+    const isHidden=show?"visible":"hidden";
+    useEffect(() => {
+      
+      
+  },[show]);
     return (
         <>
-
-        
-            <Offcanvas show={show} onHide={handleClose} className={styles.sideBar}>
-                <Offcanvas.Header closeButton closeVariant={"white"} className={styles.title}>
-                   
-                </Offcanvas.Header>
-                <Offcanvas.Body className={styles.body}>
+                {show && width<500 && (<div className={styles.body} >
                         
-                            {width<700 && (
+                            
                                 <ul>
                                 <li>
                                   <ScrollIntoView selector="#slide1">
@@ -55,12 +54,12 @@ export const Sidebar=({show,handleClose})=>{
                                   </ScrollIntoView>
                                 </li>
                               </ul>
-                            )}
+                            
                             
 
                         
-                </Offcanvas.Body>
-            </Offcanvas>
+                
+            </div>)}
         </>
     );
 }
