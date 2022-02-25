@@ -10,26 +10,43 @@ import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
 import classes from "./Competition.module.css";
 
-export default function Competition() {
+export default function Competition(props) {
   return (
     <Card sx={{ maxWidth: 345 }} className={classes.cardStyle}>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
-        image="https://scx2.b-cdn.net/gfx/news/2019/3-robot.jpg"
+        height="340"
+        image={props.img}
+        className={classes.imgStyle}
       />
-      <CardContent>
+      <div className={classes.titleStyle}>
+        <h3>{props.title}</h3>
+        <Button
+            variant="contained"
+            startIcon={<ArrowDownwardIcon />}
+            color="success"
+            className={classes.buttonStyle}
+          >
+            Down
+          </Button>
+          <Button
+            variant="contained"
+            startIcon={<SendIcon />}
+            className={classes.buttonStyle}
+          >
+            Participate
+          </Button>
+      </div>
+     {/* <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Robotic Competition
+          {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          robotics, design, construction, and use of machines (robots) to
-          perform tasks done traditionally by human beings. ... Many aspects of
-          robotics involve artificial intelligence
+          {props.description}
         </Typography>
-      </CardContent>
-      <CardActions>
+      </CardContent> 
+     <CardActions>
         <Stack
           direction="row"
           justifyContent="center"
@@ -52,7 +69,11 @@ export default function Competition() {
             Participate
           </Button>
         </Stack>
-      </CardActions>
+      </CardActions> */}
     </Card>
+    // <div className={classes.content_img}>
+    //   <img src={props.img} width='100%' height='100%'/>
+    //   <div className={classes.titleStyle}>Image 1 Text</div>
+    // </div>
   );
 }
