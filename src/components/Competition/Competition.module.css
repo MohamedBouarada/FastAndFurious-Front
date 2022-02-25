@@ -21,8 +21,8 @@
   box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24),
     0 2px 4px 0 rgba(67, 80, 98, 0.1) !important;
 
-  float: left;
-  position: relative;
+  /* float: left; */
+  /* position: relative; */
 }
 
 .titleStyle {
@@ -38,10 +38,9 @@
 
 .cardStyle:hover {
   transform: translateY(-13px);
-  cursor: pointer;
 }
 
-.cardStyle:hover .titleStyle {
+/* .cardStyle:hover .titleStyle {
   opacity: 1;
 }
 
@@ -53,11 +52,7 @@
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-}
+} */
 
-.buttonStyle{
-  /* background-color: green;
-  color: white; */
-  margin-bottom: 5px;
-}
+
 

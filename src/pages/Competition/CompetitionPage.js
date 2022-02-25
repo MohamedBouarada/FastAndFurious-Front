@@ -4,14 +4,14 @@ import Competition from "../../components/Competition/Competition";
 
 export default function CompetitionPage() {
   return (
-    <div>
-      <nav id="header-navbar" className="navbar navbar-expand-lg py-4">
+    <div className="bg">
+      {/* <nav id="header-navbar" className="navbar navbar-expand-lg py-4">
         <div className="container">
           <a
             className="navbar-brand d-flex align-items-center text-white"
             href="/"
           >
-            {/* <h3 className="font-weight-bolder mb-0">fast&furious</h3> */}
+            <h3 className="font-weight-bolder mb-0">fast&furious</h3>
             <img
               src={require("./img/logo_f_f_blanc.png")}
               alt="logo"
@@ -36,11 +36,11 @@ export default function CompetitionPage() {
                   Form
                 </a>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="about.html">
                   About
                 </a>
-              </li> */}
+              </li> 
               <li className="nav-item">
                 <a className="nav-link" href="#competitions">
                   Blog
@@ -50,17 +50,17 @@ export default function CompetitionPage() {
                 <a className="nav-link" href="contact.html">
                   Contact
                 </a>
-              </li> */}
-              {/* <li className="nav-item">
+              </li>
+              <li className="nav-item">
                 <a id="side-search-open" className="nav-link" href="#">
                   <span className="lnr lnr-magnifier" />
                 </a>
-              </li> */}
-              {/* <li className="nav-item only-desktop">
+              </li>
+              <li className="nav-item only-desktop">
                 <a className="nav-link" id="side-nav-open" href="#">
                   <span className="lnr lnr-menu" />
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
@@ -76,8 +76,8 @@ export default function CompetitionPage() {
           </p>
           <p>info@yourdomain.com</p>
         </div>
-      </div> */}
-      {/* <div id="side-search" className="sidenav">
+      </div>
+      <div id="side-search" className="sidenav">
         <a href="javascript:void(0)" id="side-search-close">
           ×
         </a>
@@ -101,7 +101,7 @@ export default function CompetitionPage() {
             </div>
           </form>
         </div>
-      </div>{" "} */}
+      </div>{" "}
       <div className="jumbotron d-flex align-items-center">
         <div className="container text-center">
           <h1 className="display-1 mb-4">
@@ -129,7 +129,7 @@ export default function CompetitionPage() {
         <div className="triangle triangle-4">
           <img src={require("./img/obj_triangle.png")} alt="" />
         </div>
-      </div>{" "}
+      </div>{" "} */}
       {/* Features Section*/}
       <section id="features" className="">
         <div className="container">

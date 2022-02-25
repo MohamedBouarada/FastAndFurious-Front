@@ -18,27 +18,28 @@ export default function Competition(props) {
         alt="green iguana"
         height="340"
         image={props.img}
-        className={classes.imgStyle}
+        // className={classes.imgStyle}
       />
-      <div className={classes.titleStyle}>
+      {/* <div className={classes.titleStyle}>
         <h3>{props.title}</h3>
         <Button
             variant="contained"
             startIcon={<ArrowDownwardIcon />}
             color="success"
             className={classes.buttonStyle}
+            style={{marginBottom : '5px'}}
           >
             Down
-          </Button>
-          <Button
+        </Button>
+        <Button
             variant="contained"
             startIcon={<SendIcon />}
             className={classes.buttonStyle}
           >
             Participate
           </Button>
-      </div>
-     {/* <CardContent>
+      </div> */}
+     <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
@@ -63,13 +64,13 @@ export default function Competition(props) {
           </Button>
           <Button
             variant="outlined"
-            endIcon={<SendIcon />}
+            startIcon={<SendIcon />}
             className={classes.buttonStyle2}
           >
             Participate
           </Button>
         </Stack>
-      </CardActions> */}
+      </CardActions>
     </Card>
     // <div className={classes.content_img}>
     //   <img src={props.img} width='100%' height='100%'/>
