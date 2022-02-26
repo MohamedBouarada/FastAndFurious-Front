@@ -6,7 +6,7 @@ class Sponsors extends React.Component {
 
     return(
       
-        <div className="container">
+        <div className={styles.container}>
              
         <div className={styles.ugrey5}>
         <h1>SPONSORS</h1>

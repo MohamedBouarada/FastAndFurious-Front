@@ -8,7 +8,7 @@ const NavBar = ({ handleShow, show }) => {
   const isHidden = show ? "hidden" : "visible";
   return (
     <>
-      <section>
+      <section className={styles.section}>
         <div className={styles.nav}>
           <div className={styles.logoContainer}>
           {width >= 500 && (<div className={styles.logo1}>
@@ -40,7 +40,7 @@ const NavBar = ({ handleShow, show }) => {
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#slide3">
+                <ScrollIntoView selector="#competetions">
                   <a className="mdl-button mdl-js-button mdl-button--raised">
                     competitions
                   </a>
