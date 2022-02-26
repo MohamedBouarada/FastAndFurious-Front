@@ -4,7 +4,7 @@ import data from '../allArticles/data';
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { Parallax } from 'react-parallax';
 import useWindowDimensions from "../../utilities/ScreenDimensions";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 import ScrollIntoView from 'react-scroll-into-view';
 
 const Article=(props)=>{

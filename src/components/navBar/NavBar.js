@@ -47,14 +47,14 @@ const NavBar = ({ handleShow, show }) => {
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#slide4">
+                <ScrollIntoView selector="#inscription">
                   <a className="mdl-button mdl-js-button mdl-button--raised">
                     registration
                   </a>
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#2">
+                <ScrollIntoView selector="#contact">
                   <a className="mdl-button mdl-js-button mdl-button--raised">
                     contact
                   </a>
