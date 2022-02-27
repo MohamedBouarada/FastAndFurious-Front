@@ -1,9 +1,9 @@
 import styles from "./sideBar.module.css";
 import ScrollIntoView from "react-scroll-into-view";
-import CloseIcon from '@mui/icons-material/Close';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import CloseIcon from "@mui/icons-material/Close";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 import useWindowDimensions from "../../utilities/ScreenDimensions";
 import { useEffect } from "react";
@@ -61,7 +61,7 @@ export const Sidebar = ({ show, handleShow }) => {
     <div className="mobile-menu">
       <div className="menu-backdrop" />
       <div className="close-btn">
-        <CloseIcon color='white' onClick={handleShow} />
+        <CloseIcon color="white" onClick={handleShow} />
       </div>
       <nav className="menu-box">
         <div className="nav-logo">
@@ -74,40 +74,55 @@ export const Sidebar = ({ show, handleShow }) => {
           <ul className="navigation">
             <li>
               {/* <a href="#">Home</a> */}
-              {/* <ScrollIntoView className="scrollView" selector="#slide1"> */}
-                <a href="#slide1" className="mdl-button mdl-js-button mdl-button--raised">
-                  about
-                </a>
-              {/* </ScrollIntoView> */}
+              <ScrollIntoView className="scrollView" selector="#slide1" onClick={handleShow}>
+              <a
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                about
+              </a>
+              </ScrollIntoView>
             </li>
             <li>
               {/* <a href="#">Liste de produits</a> */}
-              {/* <ScrollIntoView className="scrollView" selector="#slide2"> */}
-                <a href="#slide2" className="mdl-button mdl-js-button mdl-button--raised">
-                  committee
-                </a>
-              {/* </ScrollIntoView> */}
+              <ScrollIntoView className="scrollView" selector="#slide2" onClick={handleShow}>
+              <a
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                committee
+              </a>
+              </ScrollIntoView>
             </li>
             <li>
-              {/* <ScrollIntoView className="scrollView" selector="#slide3"> */}
-                <a href="#slide3" className="mdl-button mdl-js-button mdl-button--raised">
-                  competitions
-                </a>
-              {/* </ScrollIntoView> */}
+              <ScrollIntoView className="scrollView" selector="#slide3" onClick={handleShow}>
+              <a
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                competitions
+              </a>
+              </ScrollIntoView>
             </li>
             <li>
-              {/* <ScrollIntoView className="scrollView" selector="#slide4"> */}
-                <a href="#slide4" className="mdl-button mdl-js-button mdl-button--raised">
-                  Regstration
-                </a>
-              {/* </ScrollIntoView> */}
+              <ScrollIntoView className="scrollView" selector="#slide4" onClick={handleShow}>
+              <a
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                Regstration
+              </a>
+              </ScrollIntoView>
             </li>
             <li>
-              {/* <ScrollIntoView className="scrollView" selector="#2"> */}
-                <a href="#2" className="mdl-button mdl-js-button mdl-button--raised">
-                  contact
-                </a>
-              {/* </ScrollIntoView> */}
+              <ScrollIntoView className="scrollView" selector="#2" onClick={handleShow}>
+              <a
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                contact
+              </a>
+              </ScrollIntoView>
             </li>
           </ul>
         </div>
@@ -115,12 +130,12 @@ export const Sidebar = ({ show, handleShow }) => {
           <ul className="clearfix">
             <li>
               <a href="#">
-                <FacebookIcon color="white"/>
+                <FacebookIcon color="white" />
               </a>
             </li>
             <li>
               <a href="#">
-                <TwitterIcon color="white"/>
+                <TwitterIcon color="white" />
               </a>
             </li>
             <li>
