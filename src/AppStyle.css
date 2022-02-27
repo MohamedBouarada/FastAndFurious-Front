@@ -1,9 +1,9 @@
 .mobile-menu {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   width: 250px;
-  padding-right: 30px;
+  padding-left: 30px;
   max-width: 100%;
   height: 100%;
   opacity: 0;
@@ -31,14 +31,14 @@
 }
 .mobile-menu .menu-backdrop {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  -webkit-transform: translateX(101%);
-  -ms-transform: translateX(101%);
-  transform: translateX(101%);
+  -webkit-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  transform: translateX(-101%);
   transition: all 900ms ease;
   -moz-transition: all 900ms ease;
   -webkit-transition: all 900ms ease;
@@ -70,9 +70,9 @@
   opacity: 0;
   visibility: hidden;
   border-radius: 0px;
-  -webkit-transform: translateX(101%);
-  -ms-transform: translateX(101%);
-  transform: translateX(101%);
+  -webkit-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  transform: translateX(-101%);
 }
 .mobile-menu-visible .mobile-menu .menu-box {
   opacity: 1;
