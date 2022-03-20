@@ -49,10 +49,11 @@
   height: 100%;
  
 }
-  .button{
-    color: transparent;
-    border-color: transparent;
-  }
+.barsConatiner{
+  margin-left: 5%;
+  width: 100%;
+  margin-right: 40%;
+}
   .bars{
     
     margin-left: 9%;

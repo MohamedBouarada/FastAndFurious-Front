@@ -11,11 +11,11 @@ const HomeScreen=()=>{
     return(
         <>  
             <Welcome />
+
             <AllArticle />
-            
-            
+ 
             <Sponsors />
-            <Footer /> 
+            
             
             
             </>

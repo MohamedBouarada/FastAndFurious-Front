@@ -7,7 +7,7 @@ import Article from '../article/Article';
 
 const AllArticle=()=>{
     const [articles,setArticles]=useState(data);
-   
+    //if width <500 setarticles dataO5ra (fiha tsawer b toul)
     return(
         <section className={styles.section}>
 

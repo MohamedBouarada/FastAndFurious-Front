@@ -3,6 +3,8 @@ import useWindowDimensions from "../../utilities/ScreenDimensions";
 import styles from "./navBar.module.css";
 import { FaBars } from "react-icons/fa";
 import { Button } from "react-bootstrap";
+import {Link} from "react-router-dom";
+
 const NavBar = ({ handleShow, show }) => {
   const { width } = useWindowDimensions();
   const isHidden = show ? "hidden" : "visible";
@@ -15,9 +17,9 @@ const NavBar = ({ handleShow, show }) => {
               <img src="/logos/logoff.png" className={styles.logoFF} />
             </div>)}
             {width < 500 && (
-            <Button className={styles.bars} onClick={handleShow}>
-              <FaBars />
-            </Button>
+            <div  className={styles.barsConatiner} onClick={handleShow}>
+              <FaBars className={styles.bars} />
+            </div>
           )}
             <div className={styles.logo2}>
               <img src="/logos/logoauto.png" className={styles.logoAC} />
@@ -27,13 +29,13 @@ const NavBar = ({ handleShow, show }) => {
             <ul>
               <li>
                 <ScrollIntoView selector="#slide1">
-                  <a className="mdl-button mdl-js-button mdl-button--raised">
+                  <a href="/#slide1" className="mdl-button mdl-js-button mdl-button--raised">
                     about
                   </a>
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#slide2">
+                <ScrollIntoView selector="#commitee">
                   <a className="mdl-button mdl-js-button mdl-button--raised">
                     committee
                   </a>
@@ -41,14 +43,14 @@ const NavBar = ({ handleShow, show }) => {
               </li>
               <li>
                 <ScrollIntoView selector="#competetions">
-                  <a className="mdl-button mdl-js-button mdl-button--raised">
+                  <a href="/competitions#competetions" className="mdl-button mdl-js-button mdl-button--raised">
                     competitions
                   </a>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#inscription">
-                  <a className="mdl-button mdl-js-button mdl-button--raised">
+                  <a href="/competitions#inscription" className="mdl-button mdl-js-button mdl-button--raised">
                     registration
                   </a>
                 </ScrollIntoView>

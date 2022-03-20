@@ -11,6 +11,8 @@ import Stack from "@mui/material/Stack";
 
 import classes from "./Competition.module.css";
 
+import ScrollIntoView from "react-scroll-into-view";
+
 export default function Competition(props) {
   return (
     <Card sx={{ maxWidth: 345 }} className={classes.cardStyle}>
@@ -63,6 +65,7 @@ export default function Competition(props) {
           >
             Down
           </Button>
+          <ScrollIntoView selector="#inscription">
           <Button
             variant="outlined"
             startIcon={<SendIcon />}
@@ -70,7 +73,9 @@ export default function Competition(props) {
           >
             Participate
           </Button>
-        </Stack>
+        
+          </ScrollIntoView>
+          </Stack>
       </CardActions>
     </Card>
     // <div className={classes.content_img}>

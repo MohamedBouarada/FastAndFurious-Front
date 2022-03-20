@@ -14,6 +14,9 @@ import Footer from "./components/footer/Footer";
 import AllArticle from "./components/allArticles/AllArticles";
 import CompetetionsScreen from "./screens/CompetetionsScreen";
 
+
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
 function App() {
    const [show, setShow] = useState(false);
 
@@ -24,8 +27,15 @@ function App() {
     <div className={`${styles.container} ${show ? 'mobile-menu-visible' : ''}`}>
       <NavBar handleShow={handleShow} show={show}/>
       <Sidebar handleShow={handleShow} show={show}/>
+
+      <BrowserRouter>
+                <Routes>
+                    <Route exact path="/" element={<HomeScreen/>}/>
+                    <Route path='/competitions' element={<CompetetionsScreen />}/>
+
+                </Routes>
+        </BrowserRouter>
       
-      <CompetetionsScreen />
       <Footer />
       
       {/* <Competition/> */}
