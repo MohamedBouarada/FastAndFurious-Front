@@ -1,0 +1,109 @@
+#hidden-div:hover {
+    background-color: rgb(201, 46, 46);
+}
+
+#everything {
+    background: url(photos/imagebg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#blur {
+    background: rgba(212, 212, 212, 0.212); 
+}
+
+.writing {
+    font-size: 16px;
+    font-weight: 600;
+}
+.tc{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c52a1;
+  }
+  .firstItems{
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  .allItems{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .profile-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 55px;
+    margin-top: 10%;
+  }
+  .profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+  }
+  .profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+  }
+  .profile-card:hover .img{
+    transform: translateY(-60px);
+  }
+  .img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+  }
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+  .caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+  }
+  .profile-card:hover .caption{
+    opacity: 1;
+  }
+  .caption h3{
+    font-size: 21px;
+  }
+  .caption p{
+    font-size: 16px;
+    color: #0c52a1;
+    margin: 2px 0 9px 0;
+  }
+  .caption .social-links a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 21px;
+    transition: .6s;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }

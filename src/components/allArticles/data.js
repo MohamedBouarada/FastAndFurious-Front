@@ -18,19 +18,12 @@ const data = [
     {
         _id: '3',
         title: 'autoclub',
-        nextitem: 'commitee',
+        nextitem: '',
         image: '/images/image1.jpg',
         logo: '/logos/logoffblanc.png',
         description: 'AutoClub launched 14 years ago by a bunch of INSAT students from various departments of engineering with the aim of raising awareness about the latest trends in the field of automobile, aerospace , robotics and advanced mobility and providing a platform for aspiring engineers to showcase their skills and implement what they learn , through various activities. AutoClub expanded its scope throughout the years to become one of the most active student clubs around INSAT and it happens to be the only club bringing together automative enthusiasts.'
     },
-    {
-        _id: '4',
-        title: 'commitee',
-        nextitem: '',
-        image: '/images/image5.jpg',
-        logo: '/logos/logoff.png',
-        description: 'Create complex layouts with ConstraintLayout by adding constraints from each view to other views and guidelines. Then preview your layout on any screen size by selecting one of various'
-    },
+    
 ];
 
 export default data;

@@ -3,6 +3,7 @@ import React ,{useState} from "react";
 import styles from './index.module.css';
 import './AppStyle.css'
 
+
 import CompetitionPage from "./pages/Competition/CompetitionPage";
 import NavBar from "./components/navBar/NavBar";
 import { Sidebar } from "./components/sideBar/SideBar";
