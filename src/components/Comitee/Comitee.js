@@ -30,12 +30,12 @@ class Comitee extends React.Component {
             ["Samer Hdhili" , "Vice-president technique"] ,
             ["Mariem Soula" , "Vice-presidente administrative"] ,
             ["Aya Nefzi" , "HR manager"] ,
-            ["Eya Kouki" , "Orginization Manager"] ,
+            ["Mohamed Bouarada" , "Webmaster"] , 
             ["Maryem Mohsni" , "Sponsoring Manager"] ,
             ["Med Wassim Kbaier" , "Logistics Manager"] ,
-            ["Asma Hathroubi" , "Treasurer"] , 
-            ["Mohamed Bouarada" , "Webmaster"] , 
             ["Eya Garraoui" , "Media Off Manager"] ,
+            ["Eya Kouki" , "Orginization Manager"] ,
+            ["Asma Hathroubi" , "Treasurer"] , 
             ["Eya Oueslati" , "Media On Manager"] , 
             ["Oussema Doggaz" , "Graphic designer"] , 
             ["Karim Hafnaoui" , "AV Manager"] ,
@@ -86,11 +86,18 @@ class Comitee extends React.Component {
            </div>
        </div> )
         } 
-
-        const numberOfItems = this.state.showMore ? items.length : 5 ;
-
+        let numberOfItems=0;
+        if(this.props.width>500){
+             numberOfItems = this.state.showMore ? items.length : 5 ;
+        }else{
+            numberOfItems = this.state.showMore ? items.length : 1 ;
+        }
+        console.log(this.props.width) 
         return (
-            <div className="tc" id="everything">
+            <div className="tc" id="committee">
+                <div className="title">
+                    commitee
+                </div>
                 <div className="firstItems">
                 {items1.slice(0, 4).map((item)=> {
                 return (
@@ -107,8 +114,8 @@ class Comitee extends React.Component {
                 })}
                 
                 </div>
-                <div>
-                    <span className="b br3 mt2 ph3 pv2 input-reset ba b--black grow pointer f6 dib" id="hidden-div" onClick={()=> this.handleClick()}>Show more</span>
+                <div className="button"> 
+                    <span className="button-74" id="hidden-div" onClick={()=> this.handleClick()}>Show more</span>
                 </div>
             </div>
         ) ;

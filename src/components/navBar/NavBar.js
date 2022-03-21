@@ -28,22 +28,29 @@ const NavBar = ({ handleShow, show }) => {
           {width >= 500 && (
             <ul>
               <li>
-                <ScrollIntoView selector="#slide1">
-                  <a href="/#slide1" className="mdl-button mdl-js-button mdl-button--raised">
+                <ScrollIntoView selector="#home">
+                  <a href="/#home" className="mdl-button mdl-js-button mdl-button--raised">
+                    Home
+                  </a>
+                </ScrollIntoView>
+              </li>
+              <li>
+                <ScrollIntoView selector="#fast And Furious">
+                  <a href="/#fast And Furious" className="mdl-button mdl-js-button mdl-button--raised">
                     about
                   </a>
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#commitee">
-                  <a className="mdl-button mdl-js-button mdl-button--raised">
+                <ScrollIntoView selector="#committee">
+                  <a href="/#committee" className="mdl-button mdl-js-button mdl-button--raised">
                     committee
                   </a>
                 </ScrollIntoView>
               </li>
               <li>
-                <ScrollIntoView selector="#competetions">
-                  <a href="/competitions#competetions" className="mdl-button mdl-js-button mdl-button--raised">
+                <ScrollIntoView selector="#competitions">
+                  <a href="/competitions#competitions" className="mdl-button mdl-js-button mdl-button--raised">
                     competitions
                   </a>
                 </ScrollIntoView>

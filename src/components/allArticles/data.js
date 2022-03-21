@@ -1,7 +1,7 @@
 const data = [
     {
         _id: '1',
-        title: 'slide1',
+        title: 'fast And Furious',
         nextitem: 'insat',
         image: '/images/image19.jpg',
         logo: '/logos/logoffblanc.png',
@@ -18,10 +18,10 @@ const data = [
     {
         _id: '3',
         title: 'autoclub',
-        nextitem: '',
+        nextitem: 'committee',
         image: '/images/image1.jpg',
         logo: '/logos/logoffblanc.png',
-        description: 'AutoClub launched 14 years ago by a bunch of INSAT students from various departments of engineering with the aim of raising awareness about the latest trends in the field of automobile, aerospace , robotics and advanced mobility and providing a platform for aspiring engineers to showcase their skills and implement what they learn , through various activities. AutoClub expanded its scope throughout the years to become one of the most active student clubs around INSAT and it happens to be the only club bringing together automative enthusiasts.'
+        description: 'AutoClub launched 14 years ago by a bunch of INSAT students from various departments of engineering with the aim of raising awareness about the latest trends in the field of automobile, aerospace , robotics and advanced mobility and providing a platform for aspiring engineers to showcase their skills and implement what they learn , through various activities.'
     },
     
 ];

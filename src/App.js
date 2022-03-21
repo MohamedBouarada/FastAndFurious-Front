@@ -23,6 +23,12 @@ function App() {
 
     // const handleClose = () => setShow(false);
     const handleShow = () => setShow(!show);
+
+
+    //Timer
+    
+
+    
     
   return (
     <div className={`${styles.container} ${show ? 'mobile-menu-visible' : ''}`}>
@@ -31,7 +37,7 @@ function App() {
 
       <BrowserRouter>
                 <Routes>
-                    <Route exact path="/" element={<HomeScreen/>}/>
+                    <Route exact path="/" element={<HomeScreen />}/>
                     <Route path='/competitions' element={<CompetetionsScreen />}/>
 
                 </Routes>

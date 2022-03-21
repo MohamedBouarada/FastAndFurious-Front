@@ -4,7 +4,7 @@ import Competition from "../../components/Competition/Competition";
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default function CompetitionPage() {
   return (
-    <div className="bg" id="competetions">
+    <div className="bg" id="competitions">
       {/* <nav id="header-navbar" className="navbar navbar-expand-lg py-4">
         <div className="container">
           <a

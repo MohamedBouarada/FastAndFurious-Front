@@ -72,10 +72,21 @@ export const Sidebar = ({ show, handleShow }) => {
         <div className="menu-outer">
           {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
           <ul className="navigation">
+          <li>
+              {/* <a href="#">Home</a> */}
+              <ScrollIntoView className="scrollView" selector="#home" onClick={handleShow}>
+              <a href="/#home"
+                className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
+                // onClick={handleShow}
+              >
+                home
+              </a>
+              </ScrollIntoView>
+            </li>
             <li>
               {/* <a href="#">Home</a> */}
-              <ScrollIntoView className="scrollView" selector="#slide1" onClick={handleShow}>
-              <a
+              <ScrollIntoView className="scrollView" selector="#fast And Furious" onClick={handleShow}>
+              <a href="/#fast And Furious"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
@@ -85,8 +96,8 @@ export const Sidebar = ({ show, handleShow }) => {
             </li>
             <li>
               {/* <a href="#">Liste de produits</a> */}
-              <ScrollIntoView className="scrollView" selector="#slide2" onClick={handleShow}>
-              <a
+              <ScrollIntoView className="scrollView" selector="#committee" onClick={handleShow}>
+              <a href="/#committee"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
@@ -95,8 +106,9 @@ export const Sidebar = ({ show, handleShow }) => {
               </ScrollIntoView>
             </li>
             <li>
-              <ScrollIntoView className="scrollView" selector="#competetions" onClick={handleShow}>
+              <ScrollIntoView className="scrollView" selector="#competitions" onClick={handleShow}>
               <a
+                href="/competitions#competitions"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
@@ -107,6 +119,7 @@ export const Sidebar = ({ show, handleShow }) => {
             <li>
               <ScrollIntoView className="scrollView" selector="#inscription" onClick={handleShow}>
               <a
+                href="/competitions#inscription"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
@@ -129,7 +142,7 @@ export const Sidebar = ({ show, handleShow }) => {
         <div className="social-links">
           <ul className="clearfix">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/Fast-Furious-40-109814154959846">
                 <FacebookIcon color="white" />
               </a>
             </li>
@@ -139,7 +152,7 @@ export const Sidebar = ({ show, handleShow }) => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://instagram.com/fast_and_furious_4_0?utm_medium=copy_link">
                 <InstagramIcon color="white" />
               </a>
             </li>
