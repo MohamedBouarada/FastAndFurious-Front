@@ -60,6 +60,8 @@ export default function Competition(props) {
           <Button
             variant="outlined"
             startIcon={<ArrowDownwardIcon />}
+            href={props.about}
+            target="_blank"
             color="success"
             className={classes.buttonStyle1}
           >

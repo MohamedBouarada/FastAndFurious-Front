@@ -231,3 +231,10 @@ form label.password button.toggle-visibility span{vertical-align: middle;}
 		margin-top: 700px;
 	}
   }
+
+  .alertSuccess{
+	  color: #27ae60;
+  }
+  .alertError{
+	  color: #c0392b;
+  }
