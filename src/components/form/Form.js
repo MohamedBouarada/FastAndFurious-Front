@@ -15,22 +15,21 @@ const Form = () => {
   const [membre1, setMembre1] = useState("");
   const [membre2, setMembre2] = useState("");
   const [membre3, setMembre3] = useState("");
+  const [membre4, setMembre4] = useState("");
   useEffect(() => {
-    if(alertError===""){}
-    else{
+    if (alertError === "") {
+    } else {
       setAlert(alertError);
-    setAlertSuccess("");
-  
+      setAlertSuccess("");
     }
-    }, [alertError]);
+  }, [alertError]);
   useEffect(() => {
-    if(alertSuccess===""){}
-    else{
+    if (alertSuccess === "") {
+    } else {
       setAlert(alertSuccess);
-    setAlertError("");
-  
+      setAlertError("");
     }
-    }, [alertSuccess]);
+  }, [alertSuccess]);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -47,6 +46,7 @@ const Form = () => {
           membre1,
           membre2,
           membre3,
+          membre4
         },
       });
       console.log(response.data);
@@ -77,11 +77,11 @@ const Form = () => {
                   <input
                     type="radio"
                     name="radio"
-                    value="SUMO"
+                    value="carwars"
                     onChange={(e) => setCompetition(e.target.value)}
                     required
                   />{" "}
-                  <label for="flexCheckDefault-1"> Autonome-Senior </label>{" "}
+                  <label for="flexCheckDefault-1"> CAR WARS </label>{" "}
                 </div>
               </div>
               <div className="p-2 rounded">
@@ -93,7 +93,7 @@ const Form = () => {
                     value="Formula"
                     onChange={(e) => setCompetition(e.target.value)}
                   />{" "}
-                  <label for="flexCheckDefault-2"> Robot-League </label>{" "}
+                  <label for="flexCheckDefault-2"> Formula </label>{" "}
                 </div>
               </div>
               <div className="p-2 rounded">
@@ -105,7 +105,7 @@ const Form = () => {
                     value="Rally"
                     onChange={(e) => setCompetition(e.target.value)}
                   />{" "}
-                  <label for="flexCheckDefault-3"> Junior-Téléguidé </label>{" "}
+                  <label for="flexCheckDefault-3"> Rally </label>{" "}
                 </div>
               </div>
               <div className="p-2 rounded">
@@ -117,7 +117,7 @@ const Form = () => {
                     value="Entrepreneurial"
                     onChange={(e) => setCompetition(e.target.value)}
                   />{" "}
-                  <label for="flexCheckDefault-4"> Autonome-Senior </label>{" "}
+                  <label for="flexCheckDefault-4"> Entrepreneurial </label>{" "}
                 </div>
               </div>
               <div className="p-2 rounded">
@@ -129,7 +129,7 @@ const Form = () => {
                     value="CAO"
                     onChange={(e) => setCompetition(e.target.value)}
                   />{" "}
-                  <label for="flexCheckDefault-5"> Robot-League </label>{" "}
+                  <label for="flexCheckDefault-5"> CAO </label>{" "}
                 </div>
               </div>
               <div className="p-2 rounded">
@@ -141,7 +141,7 @@ const Form = () => {
                     value="Junior"
                     onChange={(e) => setCompetition(e.target.value)}
                   />{" "}
-                  <label for="flexCheckDefault-6"> Junior-Téléguidé </label>{" "}
+                  <label for="flexCheckDefault-6"> Junior </label>{" "}
                 </div>
               </div>
             </div>
@@ -195,12 +195,13 @@ const Form = () => {
             <label>
               <span className={styles.labelText}>n° tel chef d'equipe</span>
               <input
-                type="text"
+                type="tel"
                 name="telChef"
-                required minlength="8" maxlength="8"
+                required
+                minlength="8"
+                maxlength="8"
                 value={telChef}
                 onChange={(e) => setTelChef(e.target.value)}
-                
               />
             </label>
             <label className={styles.colOneHalf}>
@@ -235,7 +236,7 @@ const Form = () => {
             </label>
             <label className={styles.colOneHalf}>
               <span className={styles.labelText}>Nom&Prenom membre 4</span>
-              <input type="text" name="mem4" required />
+              <input type="text" name="mem4" value={membre4} onChange={(e) => setMembre4(e.target.value)} />
             </label>
             {alert.length > 0 && alert === alertError && (
               <div className={styles.alertError}>{alert}</div>

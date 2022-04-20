@@ -19,7 +19,7 @@ export default function Competition(props) {
       <CardMedia
         component="img"
         alt="green iguana"
-        height="340"
+        height="480"
         image={props.img}
         // className={classes.imgStyle}
       />

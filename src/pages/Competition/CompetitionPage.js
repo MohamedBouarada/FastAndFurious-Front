@@ -154,42 +154,42 @@ export default function CompetitionPage() {
                   {/* Features Item */}
                   <div className="col-md-4 col-sm-12 text-center mt-4">
                     <Competition 
-                      title="SUMO"
-                      img="https://image.winudf.com/v2/image1/Y29tLmdhbWV4LnJvYm90cmluZ2ZpZ2h0aW5nX3NjcmVlbl8xXzE1NTI1OTg0MzBfMDE4/screen-1.jpg?fakeurl=1&type=.jpg"
-                      description="Robot combat is a mode of robot competition in which custom-built machines fight using various methods to incapacitate each other" 
-                      about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts" />
-                    <Competition
                       title="Entrepreneurial"
-                      img="https://femme-project.eu/wp-content/uploads/2019/05/entrepreneurship.jpg"
+                      img="/images/le5er.jpg"
+                      description="Robot combat is a mode of robot competition in which custom-built machines fight using various methods to incapacitate each other" 
+                      about="" />
+                    <Competition
+                      title="CAR WARS"
+                      img="/images/carwars.jpg"
                       description="The entrepreneurs are often known as a source of new ideas or innovators, and bring new ideas in the market by replacing old with a new invention" 
-                      about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts" />
+                      about="https://drive.google.com/file/d/1yzCSYbA5mXXyPFotGJHuVvAmwwp6squn/view?fbclid=IwAR0_5oyKDIrZX1tDGrh_JDYzYLs2jB-HDCjBo4Upsxusr2IXXIcEkjgO7cQ" />
                   </div>
                   {/* End of Feature Item */}
                   {/* Features Item */}
                   <div className="col-md-4 col-sm-12 text-center">
                     <Competition
                       title="Formula"
-                      img="https://img.redbull.com/images/c_crop,x_366,y_0,h_2560,w_3413/c_fill,w_860,h_614/q_auto,f_auto/redbullcom/2019/09/10/9b412da6-f79e-4d10-8262-921149060ba4/superformula_landscape_hero"
+                      img="/images/formula.jpg"
                       description="Do F1 drivers pee in their suits during a race? The simple answer is yes they do"
-                      about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts" 
+                      about="https://drive.google.com/file/d/19ixqNvZccTTMus7mcDDg3Q0mM3UQk3-T/view?fbclid=IwAR2rjOUZak6fcabqB20p1KWHgTpgQd1Mbttiduwu2cnmhwxSGlBC2vjeiKc" 
                     />
                     <Competition 
                       title="CAO"
-                      img="http://www.luftmy.net/uploads/images/1911/2-1911111I340292.jpg"
+                      img="/images/CAO.jpg"
                       description="Cao primarily uses Geely's new energy vehicles, including the Geometry A sedan which has a 600km range and Maple 80V MPV which"
-                      about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts"  />
+                      about=""  />
                   </div>
                   {/* End of Feature Item */}
                   {/* Features Item */}
                   <div className="col-md-4 col-sm-12 text-center mt-4">
                     <Competition
                       title="Rally"
-                      img="https://idsb.tmgrup.com.tr/ly/uploads/images/2020/06/15/41130.JPG"
+                      img="/images/RALLY.jpg"
                       description="Rally is a form of motorsport that takes place on public or private roads with modified production or specially built road-legal cars" 
-                      about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts" />
+                      about="https://drive.google.com/file/d/1yQqu6MmFWZbXPo2nCck8RLe-iHAyOuc3/view?fbclid=IwAR1B3L2-gMdVDLt4Q8KAp13z_9A0prRcsURIslVUq2MMtavxt4J_zz1h0dQ" />
                     <Competition
                       title="Junior"
-                      img="https://www.aeroboticsglobal.com/wp-content/uploads/2018/04/build-your-own-robot.jpg"
+                      img="/images/junior.jpg"
                       description="Junior Robotics is a starter robotics set, especially designed for Kindergarten and Early Primary school students"
                       about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts"  />
                   </div>
