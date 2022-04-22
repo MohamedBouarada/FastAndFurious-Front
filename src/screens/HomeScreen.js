@@ -17,7 +17,7 @@ const HomeScreen=()=>{
 
             <AllArticle />
             <Comitee width={width}/>
-            <Sponsors />
+            
             
             
             

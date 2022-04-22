@@ -156,12 +156,12 @@ export default function CompetitionPage() {
                     <Competition 
                       title="Entrepreneurial"
                       img="/images/le5er.jpg"
-                      description="Robot combat is a mode of robot competition in which custom-built machines fight using various methods to incapacitate each other" 
+                      description="During this challenge, participants are asked to look for a solution to a problem. Those who have the most adequate solution will get the grand prize." 
                       about="" />
                     <Competition
                       title="CAR WARS"
                       img="/images/carwars.jpg"
-                      description="The entrepreneurs are often known as a source of new ideas or innovators, and bring new ideas in the market by replacing old with a new invention" 
+                      description="It's a ruthless battle between two robots for the F&F championship 🤖.The goal is to capture the other robot or complete a certain task while avoiding attacks." 
                       about="https://drive.google.com/file/d/1yzCSYbA5mXXyPFotGJHuVvAmwwp6squn/view?fbclid=IwAR0_5oyKDIrZX1tDGrh_JDYzYLs2jB-HDCjBo4Upsxusr2IXXIcEkjgO7cQ" />
                   </div>
                   {/* End of Feature Item */}
@@ -170,13 +170,13 @@ export default function CompetitionPage() {
                     <Competition
                       title="Formula"
                       img="/images/formula.jpg"
-                      description="Do F1 drivers pee in their suits during a race? The simple answer is yes they do"
+                      description="During this challenge a pre-programmed robot is asked tofinish a certain track in the least amount of time while accomplishing certain tasks,some technical characteristics and constraints are taken into consideration 🤖."
                       about="https://drive.google.com/file/d/19ixqNvZccTTMus7mcDDg3Q0mM3UQk3-T/view?fbclid=IwAR2rjOUZak6fcabqB20p1KWHgTpgQd1Mbttiduwu2cnmhwxSGlBC2vjeiKc" 
                     />
                     <Competition 
                       title="CAO"
                       img="/images/CAO.jpg"
-                      description="Cao primarily uses Geely's new energy vehicles, including the Geometry A sedan which has a 600km range and Maple 80V MPV which"
+                      description="It's a unique challenge where participants must create a design while respecting the specifications that will be delivered in the opening ceremony."
                       about=""  />
                   </div>
                   {/* End of Feature Item */}
@@ -185,12 +185,12 @@ export default function CompetitionPage() {
                     <Competition
                       title="Rally"
                       img="/images/RALLY.jpg"
-                      description="Rally is a form of motorsport that takes place on public or private roads with modified production or specially built road-legal cars" 
+                      description="In the rally challenge, the remote-controlled robot must successfully go around a track made up of several obstacles that will test the robustness and maneuverability of the robot." 
                       about="https://drive.google.com/file/d/1yQqu6MmFWZbXPo2nCck8RLe-iHAyOuc3/view?fbclid=IwAR1B3L2-gMdVDLt4Q8KAp13z_9A0prRcsURIslVUq2MMtavxt4J_zz1h0dQ" />
                     <Competition
                       title="Junior"
                       img="/images/junior.jpg"
-                      description="Junior Robotics is a starter robotics set, especially designed for Kindergarten and Early Primary school students"
+                      description=" Themed after the movie: JUMANJI . Kids will be making robots 🤖 with certain specifications in order to get through different obstacles and dangers ⚠️"
                       about="https://drive.google.com/file/d/1QpdvZAqsT2_Zt1vYh2AKM3pmuv9aX516/view?fbclid=IwAR0d-1yFJfRJeI7TjYfMglij-FGPPWWzDPZ-LD8FyGMnNjxcH_exU6lz1Ts"  />
                   </div>
                   {/* End of Feature Item */}

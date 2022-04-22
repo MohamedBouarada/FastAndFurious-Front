@@ -132,4 +132,8 @@
     }
   }
   
-  
+  @media (max-width: 500px) {
+    .cont{
+      font-size: 0.8em;
+    }
+  }

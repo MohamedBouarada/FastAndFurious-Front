@@ -49,6 +49,11 @@ export default function Competition(props) {
         <Typography variant="body2" color="text.secondary">
           {props.description}
         </Typography>
+        {/* {.about==="" && <Typography color="red" fontSize={12} > 
+          specifications will be published the night before the competition
+          </Typography>
+
+          } */}
       </CardContent> 
      <CardActions>
         <Stack
@@ -57,7 +62,7 @@ export default function Competition(props) {
           alignItems="center"
           spacing={1}
         >
-          <Button
+          {props.about!=""&& <Button
             variant="outlined"
             startIcon={<ArrowDownwardIcon />}
             href={props.about}
@@ -66,7 +71,8 @@ export default function Competition(props) {
             className={classes.buttonStyle1}
           >
             Down
-          </Button>
+          </Button>}
+          
           <ScrollIntoView selector="#inscription">
           <Button
             variant="outlined"

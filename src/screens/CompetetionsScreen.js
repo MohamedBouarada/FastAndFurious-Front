@@ -9,7 +9,7 @@ const CompetetionsScreen =()=>{
         
             <div classeName={styles.imgContainer} >
                 
-                <CompetitionPage />
+                <CompetitionPage classeName={styles.competition} />
                 <Form />
                
             </div>

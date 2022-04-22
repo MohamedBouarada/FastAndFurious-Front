@@ -22,9 +22,9 @@ class Footer extends React.Component {
         </ul>
         <h2><p id={styles.contact}>CONTACT</p></h2>
         <ul className={styles.menu}>
-          <li>Phone<h4 id={styles.cont}>+216 00 000 000</h4></li>
-          <li>Address<h4 id={styles.cont}>INSAT,centre urbain Nord, carthage, Tunisie</h4></li>
-          <li>Email<h4 id={styles.cont}>contact@ff.com</h4></li>
+          <li>Phone<h4 className={styles.cont}>+216 29 442 894</h4></li>
+          <li>Address<h4 className={styles.cont}>INSAT,centre urbain Nord, carthage, Tunis</h4></li>
+          <li>Email<h4 className={styles.cont}>fast.and.furious.autoclub@gmail.com</h4></li>
         </ul>
         <br /><br /><br /><br />
         <p id={styles.fast}>© Fast &amp; Furious 4.0 - 2022</p>
