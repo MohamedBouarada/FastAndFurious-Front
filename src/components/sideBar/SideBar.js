@@ -4,6 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { Link } from "react-router-dom";
 
 import useWindowDimensions from "../../utilities/ScreenDimensions";
 import { useEffect } from "react";
@@ -75,66 +76,67 @@ export const Sidebar = ({ show, handleShow }) => {
           <li>
               {/* <a href="#">Home</a> */}
               <ScrollIntoView className="scrollView" selector="#home" onClick={handleShow}>
-              <a href="/#home"
+              <Link to="/#home"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 home
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
             <li>
               {/* <a href="#">Home</a> */}
               <ScrollIntoView className="scrollView" selector="#fast And Furious" onClick={handleShow}>
-              <a href="/#fast And Furious"
+              <Link to="/#fast And Furious"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 about
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
             <li>
               {/* <a href="#">Liste de produits</a> */}
               <ScrollIntoView className="scrollView" selector="#committee" onClick={handleShow}>
-              <a href="/#committee"
+              <Link to="/#committee"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 committee
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
             <li>
               <ScrollIntoView className="scrollView" selector="#competitions" onClick={handleShow}>
-              <a
-                href="/competitions#competitions"
+              <Link
+                to="/competitions#competitions"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 competitions
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
             <li>
               <ScrollIntoView className="scrollView" selector="#inscription" onClick={handleShow}>
-              <a
-                href="/competitions#inscription"
+              <Link
+                to="/competitions#inscription"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 Regstration
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
             <li>
               <ScrollIntoView className="scrollView" selector="#contact" onClick={handleShow}>
-              <a
+              <Link
+                to="/#contact"
                 className="mdl-button mdl-js-button mdl-button--raised mobile_menu_items"
                 // onClick={handleShow}
               >
                 contact
-              </a>
+              </Link>
               </ScrollIntoView>
             </li>
           </ul>

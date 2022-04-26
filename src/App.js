@@ -1,8 +1,7 @@
 import HomeScreen from "./screens/HomeScreen";
-import React ,{useState} from "react";
-import styles from './index.module.css';
-import './AppStyle.css'
-
+import React, { useState } from "react";
+import styles from "./index.module.css";
+import "./AppStyle.css";
 
 import CompetitionPage from "./pages/Competition/CompetitionPage";
 import NavBar from "./components/navBar/NavBar";
@@ -15,42 +14,32 @@ import Footer from "./components/footer/Footer";
 import AllArticle from "./components/allArticles/AllArticles";
 import CompetetionsScreen from "./screens/CompetetionsScreen";
 
-
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-   const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-    // const handleClose = () => setShow(false);
-    const handleShow = () => setShow(!show);
+  // const handleClose = () => setShow(false);
+  const handleShow = () => setShow(!show);
 
+  //Timer
 
-    //Timer
-    
-
-    
-    
   return (
-    <div className={`${styles.container} ${show ? 'mobile-menu-visible' : ''}`}>
-      <NavBar handleShow={handleShow} show={show}/>
-      <Sidebar handleShow={handleShow} show={show}/>
-
+    <div className={`${styles.container} ${show ? "mobile-menu-visible" : ""}`}>
       <BrowserRouter>
-                <Routes>
-                    <Route exact path="/" element={<HomeScreen />}/>
-                    <Route path='/competitions' element={<CompetetionsScreen />}/>
+        <NavBar handleShow={handleShow} show={show} />
+        <Sidebar handleShow={handleShow} show={show} />
+        <Routes>
+          <Route exact path="/" element={<HomeScreen />} />
+          <Route path="/competitions" element={<CompetetionsScreen />} />
+        </Routes>
+      </BrowserRouter>
 
-                </Routes>
-        </BrowserRouter>
-      
       <Footer />
-      
+
       {/* <Competition/> */}
     </div>
   );
 }
 
 export default App;
-
-
-

@@ -29,44 +29,44 @@ const NavBar = ({ handleShow, show }) => {
             <ul>
               <li>
                 <ScrollIntoView selector="#home">
-                  <a href="/#home" className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/#home" className="mdl-button mdl-js-button mdl-button--raised">
                     Home
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#fast And Furious">
-                  <a href="/#fast And Furious" className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/#fast And Furious" className="mdl-button mdl-js-button mdl-button--raised">
                     about
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#committee">
-                  <a href="/#committee" className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/#committee" className="mdl-button mdl-js-button mdl-button--raised">
                     committee
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#competitions">
-                  <a href="/competitions#competitions" className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/competitions#competitions" className="mdl-button mdl-js-button mdl-button--raised">
                     competitions
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#inscription">
-                  <a href="/competitions#inscription" className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/competitions#inscription" className="mdl-button mdl-js-button mdl-button--raised">
                     registration
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
               <li>
                 <ScrollIntoView selector="#contact">
-                  <a className="mdl-button mdl-js-button mdl-button--raised">
+                  <Link to="/#contact" className="mdl-button mdl-js-button mdl-button--raised">
                     contact
-                  </a>
+                  </Link>
                 </ScrollIntoView>
               </li>
             </ul>
