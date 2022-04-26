@@ -49,7 +49,17 @@ const Form = () => {
           membre4
         },
       });
-      console.log(response.data);
+      // console.log(response.data);
+      setCompetition("");
+      setNomEquipe("");
+      setNomPrenomChef("");
+      setTelChef("");
+      setEtablissement("");
+      setMailChef("");
+      setMembre1("");
+      setMembre2("");
+      setMembre3("");
+      setMembre4("");
       setAlertSuccess(response.data);
     } catch (error) {
       console.log(error.response.data);
