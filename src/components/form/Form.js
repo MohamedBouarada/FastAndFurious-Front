@@ -247,7 +247,7 @@ const Form = () => {
 
             <div className={styles.textCenter}>
               <button className={styles.submit} name="register">
-                Sign Me Up
+                register
               </button>
             </div>
           </div>
