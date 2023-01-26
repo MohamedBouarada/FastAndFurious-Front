@@ -1,0 +1,129 @@
+.expired-notice {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+  }
+  
+  .expired-notice > span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .expired-notice > p {
+    font-size: 1.5rem;
+  }
+  
+  .show-counter {
+    margin-top: 5%;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+
+  }
+  
+  .show-counter .countdown-link {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+    padding: 1.5rem;
+    
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .show-counter .countdown {
+      
+    line-height: 2.5rem;
+    width: 10%;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 3px  rgb(177, 22, 22);
+    background-color: rgba(168, 161, 161, 0.226);
+    box-shadow: 6px 5px 5px rgba(167, 17, 17, 0.705);
+    border-radius: 1.85rem;
+  }
+  
+  .show-counter .countdown.danger {
+    color: #ff0000;
+  }
+  
+  .show-counter .countdown > p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .show-counter .countdown > span {
+    text-transform: uppercase;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+  }
+
+  
+  @media (max-width: 1050px) {
+    .show-counter .countdown-link {
+        
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1rem;
+        padding: 1rem;
+        
+        text-decoration: none;
+        color: #000;
+      }
+      .show-counter .countdown {
+      
+        line-height: 2rem;
+        width: 15%;
+        padding: 0.5rem;
+      }
+      .show-counter .countdown > p {
+        margin: 0;
+       }
+      .show-counter .countdown > span {
+        
+        font-size: 0.7rem;
+        
+      }
+      
+  }
+  @media (max-width: 500px) {
+    .show-counter .countdown-link {
+        
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1rem;
+        padding: 1rem;
+        
+        text-decoration: none;
+        color: #000;
+      }
+      .show-counter .countdown {
+      
+        line-height: 2rem;
+        width: 25%;
+        padding: 0.5rem;
+      }
+      .show-counter .countdown > p {
+        margin: 0;
+       }
+      .show-counter .countdown > span {
+        
+        font-size: 0.7rem;
+        
+      }
+      
+  }

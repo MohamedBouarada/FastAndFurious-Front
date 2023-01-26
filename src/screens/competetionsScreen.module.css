@@ -1,0 +1,10 @@
+
+
+.imgContainer{
+    background-image: url("https://www.usmagazine.com/wp-content/uploads/1428049615_mcdsaha_ec188_h_the-fast-the-furious-zoom.jpg?quality=86&strip=all");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

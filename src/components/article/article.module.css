@@ -1,0 +1,361 @@
+.image{
+    position:relative;
+    height: 100%;
+}
+
+
+.logoContainer{
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 60px;
+    
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.information{
+    /*position:absolute;*/
+    position:absolute;
+    left: 20%;
+    margin-top: 10%;
+    width: 60%;
+    border-style: outset;
+    border-color: rgba(0, 0, 0.2, 0.2);
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+}
+.title{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    white 12%,
+    black 14%,
+    #ff1361 47%,
+    white 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+    text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 85px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.description{
+    color: #e7e7e7;
+    margin:0;
+    font-family: "Verdana", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: -0.9px;
+    animation-duration: 2s;
+  animation-name: slidein;
+  word-spacing: 5px;
+ 
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.buttonStyle{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.next{
+    align-items: center;
+    position: relative;
+    height: 6vh;
+    width: 10%;
+    font-family: "Verdana", Sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+    letter-spacing: 1px;
+    fill: crimson;
+    color: crimson;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 100px 100px 100px 100px;
+    border-color: crimson;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.next:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.icon{
+    font-size: 1.5rem;
+    position: relative;
+}
+@media (max-width: 1400px) {
+    .ImgContainer{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        
+    }
+   .logoContainer{
+    position: absolute;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    top: 0;
+    width: 20%;
+    
+}
+    .logo{
+    width: 100%;
+    height: 100%;
+    }
+    .title{
+        font-size: 2.7rem;
+    letter-spacing: 2.4px;
+    margin-top:0;
+    margin-bottom: 20px; 
+    }
+    .information{
+    
+        position:absolute;
+        top: 10%;
+        left: 20%;
+
+        padding: 10px;
+    }
+    .next{
+        width: 20%;
+    }
+    .description{
+        
+        font-family: "Verdana", Sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1.3em;
+        letter-spacing: -0.9px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    
+    
+    .next{
+        
+        width: 20%;
+    }
+    .description{
+        
+        font-family: "Verdana", Sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        line-height: 1.3em;
+        letter-spacing: -0.9px;
+        word-spacing: 5px;
+        margin-bottom: 20%;
+    }
+    .description button {
+        background: transparent;
+        border-color: transparent;
+        text-transform: capitalize;
+        color: rgba(207, 15, 15, 0.849);
+        text-decoration: underline;
+        font-size: 1rem;
+        cursor: pointer;
+        padding-left: 0.25rem;
+        font-weight: 600;
+      }
+    
+    
+
+}
+@media (max-width: 500px) {
+    
+    .title{
+        font-size: 1.4rem;
+    letter-spacing: 2.2px;
+    margin-top:0;
+    margin-bottom: 20px; 
+    }
+    
+    .next{
+        width: 20%;
+    }
+    .icon{
+        font-size: 1rem;
+    }
+    .description{
+        
+        font-family: "Verdana", Sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.3em;
+        letter-spacing: -0.11px;
+    }
+
+    .information{
+        margin-top: 20%;
+        left: 10%;
+        width: 80%;
+        
+    }
+
+}
+
+/*.section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+}
+.ImgContainer{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+.information{
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    padding: 10px;
+    
+    display: list-item;
+    
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-blend-mode: luminosity;
+    background: rgb(26, 31, 41);
+    opacity: 1;
+}
+.title{
+    color: crimson;
+    margin:0;
+    font-family: "Lucida Handwriting","Brush Script MT", cursive;
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4.9px;
+    text-shadow: #7e3434;
+    margin-bottom: 40px;    
+}
+.description{
+    color: #ffffff;
+    margin:0;
+    margin-right: 30%;
+    font-family: "Verdana", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: -0.9px;
+}
+.buttonStyle{
+    margin-top: 10%;
+    margin-left: 40%;
+    display: flex;
+    position: relative;
+}
+.next{
+    align-items: center;
+    position: relative;
+    height: 6vh;
+    width: 10%;
+    font-family: "Verdana", Sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+    letter-spacing: 1px;
+    fill: crimson;
+    color: crimson;
+    background-color: #ffffff;
+    border-radius: 100px 100px 100px 100px;
+    border-color: crimson;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.next:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
+}
+.icon{
+    font-size: 1.5rem;
+    position: relative;
+}
+@media (max-width: 800px) {
+    .information{
+        
+    }
+    .title{
+        font-size: 3.5rem;
+    letter-spacing: 3.2px;
+    margin-top:0;
+    margin-bottom: 20px; 
+    }
+    .information{
+    
+    margin:0;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: -0.9px;
+    }
+    .next{
+        width: 20%;
+    }
+}
+@media (max-width: 400px) {
+    .body {
+        font-size: 1rem;
+    }
+    .objet {
+        font-size:0.8rem;
+    }
+}*/
